@@ -87,10 +87,6 @@ HEADER는 alg와 typ 두 가지 정보로 구성되어 있다.
 
 - SIGNATURE는 HEADER와 PAYLOAD의 값을 Base64Url로 인코딩 한 후 해당 값을 비밀키를 이용해 HEADER에서 정의한 알고리즘(alg)으로 해싱을 하고 다시 Base64Url로 인코딩하여 생성한다.
 
-
-- PAYLOAD는 단순히 Base64Url로만 인코딩한 데이터이기 때문에 중간에 탈취당하면 손쉽게 디코딩해 데이터를 확인할 수 있다.
-- Claim에 정보가 많으면 JWT 길이가 길어지기 때문에 네트워크에 부담을 줄 수 있다.
-
 ---
 
 #### 참고
